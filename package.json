@@ -1,0 +1,30 @@
+{
+  "name": "@dsh-extra/dsh-bubble",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Out-of-tree chat bubble for the dsh web GUI that grumbles (LLM-varied line) whenever a new user message is sent.",
+  "type": "module",
+  "main": "lib/plugin.js",
+  "types": "lib/plugin.d.ts",
+  "exports": {
+    ".": {
+      "types": "./lib/plugin.d.ts",
+      "default": "./lib/plugin.js"
+    },
+    "./client": {
+      "types": "./lib/client.d.ts",
+      "default": "./lib/client.js"
+    },
+    "./package.json": "./package.json"
+  },
+  "dsh": {
+    "client": {
+      "platform": "web",
+      "inject": []
+    }
+  },
+  "files": [
+    "lib"
+  ],
+  "license": "MIT"
+}
